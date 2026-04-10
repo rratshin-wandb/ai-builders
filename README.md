@@ -48,7 +48,14 @@ pip install -r requirements.txt
 
 ---
 
-### 6. **Update Your Environment Variables**
+### 6. **Sign Up for a Free W&B Weave Account** 🌟
+
+Monitor, evaluate, and iterate on your AI projects with [W&B Weave](https://wandb.me/tryweave)!  
+If you don’t already have a free account, [sign up here](https://wandb.me/tryweave).
+
+---
+
+### 7. **Update Your Environment Variables**
 
 Edit your `.env` file and fill in the required values:
 
@@ -59,7 +66,7 @@ Or open it in your favorite text editor.
 
 ---
 
-### 7. **Open the Marimo Notebook in Edit Mode**
+### 8. **Open the Marimo Notebook in Edit Mode**
 
 ```bash
 marimo edit wandb_home.py
@@ -67,7 +74,7 @@ marimo edit wandb_home.py
 
 ---
 
-### 8. **Start Building!** 🚧
+### 9. **Start Building!** 🚧
 
 You’re all set—dive into the notebook and get to work!
 
