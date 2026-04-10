@@ -18,7 +18,7 @@ Use this project to see how different lamps, sofas, and other pieces of furnitur
 - 🗒️ **Instructions** to get set up and help you try it with your own room and furniture photos
 
 
-<br><br><br>
+<br><br>
 
 ## 🚀 Getting Started
 
