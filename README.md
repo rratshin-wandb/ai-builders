@@ -1,6 +1,6 @@
 # AI Builders
 
-## Project #1: 🏠 AI Interior Decorator
+## Project #1: 🏠 W&B Home (AI Interior Decorator)
 
 <img src="wandb_home/ss_wandb_home_1.png" width="300" border="1"> <img src="wandb_home/ss_wandb_home_2.png" width="300" border="1">
 
