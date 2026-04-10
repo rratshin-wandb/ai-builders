@@ -19,6 +19,7 @@ Use this project to see how different lamps, sofas, and other pieces of furnitur
 
 
 
+
 ## 🚀 Getting Started
 
 Get your local environment ready in a few easy steps!
