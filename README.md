@@ -5,17 +5,18 @@
 <img src="wandb_home/ss_wandb_home_1.png" width="300" border="1"> <img src="wandb_home/ss_wandb_home_2.png" width="300" border="1">
 
 This repository contains all the code, sample images, and supporting materials used in our first AI demo project.  
-Our AI Interior Decorator lets you **visualize how new furniture would look in your own space—before you buy it**.
+Our AI Interior Decorator lets you **visualize how new furniture would look in your own space, before you buy it**.
 
 ## ✨ Project Overview
 
-Use this project to see how different lamps, sofas, and other pieces of furniture from store catalogs will appear in photos of your actual rooms. With the help of AI, you can easily try out new interior design ideas, experiment with styles, and make smarter home décor decisions—no heavy lifting required!
+Use this project to see how different lamps, sofas, and other pieces of furniture from store catalogs will appear in photos of your actual rooms. With the help of AI, you can easily try out new interior design ideas, experiment with styles, and make smarter home décor decisions, no heavy lifting required!
 
 ## 📦 What’s Included
 
 - 📷 **Sample photos of real room interiors and lamp images from store catalogs**
 - 📝 **Code and notebooks** for running the AI decorator demo
 - 🗒️ **Instructions** to get set up and help you try it with your own room and furniture photos
+
 
 
 ## 🚀 Getting Started
