@@ -9,8 +9,7 @@ Our AI Interior Decorator lets you **visualize how new furniture would look in y
 
 ## ✨ Project Overview
 
-Use this project to see how different lamps, sofas, and other pieces of furniture from store catalogs will appear in photos of your actual rooms.  
-With the help of AI, you can easily try out new interior design ideas, experiment with styles, and make smarter home décor decisions—no heavy lifting required!
+Use this project to see how different lamps, sofas, and other pieces of furniture from store catalogs will appear in photos of your actual rooms. With the help of AI, you can easily try out new interior design ideas, experiment with styles, and make smarter home décor decisions—no heavy lifting required!
 
 ## 📦 What’s Included
 
