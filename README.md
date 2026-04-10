@@ -1,7 +1,7 @@
 # AI Builders
 
-![W&B Home](ai-builders/wandb_home/ss_wandb_home_1.png)
-![W&B Home](ai-builders/wandb_home/ss_wandb_home_2.png)
+![W&B Home](wandb_home/ss_wandb_home_1.png)
+![W&B Home](wandb_home/ss_wandb_home_2.png)
 
 ## 🚀 Getting Started
 
