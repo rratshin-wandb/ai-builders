@@ -98,6 +98,9 @@ You’re all set—dive into the notebook and get to work!
 
 ---
 
+**Note**  
+This project uses Gemini, but also includes an OpenAI version of the notebook (wandb_home_openai.py) for those without a Gemini API key.
+
 **Need help?**  
 Please [open an issue](https://github.com/rratshin-wandb/ai-builders/issues) or start a discussion if you get stuck.
 
