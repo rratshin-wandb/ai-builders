@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.22.0"
+__generated_with = "0.23.1"
 app = marimo.App(width="medium")
 
 
@@ -19,7 +19,8 @@ def _(mo):
 def _():
     import marimo as mo
     import openai
-    import google.generativeai as genai
+    from google import genai
+    from google.genai import types
     import os, io
     import requests
     from pathlib import Path
@@ -31,14 +32,14 @@ def _():
 
     from dotenv import load_dotenv
     load_dotenv()
-    return PILImage, Path, genai, io, mo, os, requests, weave
+    return PILImage, Path, genai, io, mo, os, requests, types, weave
 
 
 @app.cell
-def _(PILImage, Path, genai, io, os, requests, weave):
+def _(PILImage, Path, genai, io, os, requests, types, weave):
     class ImageGeneratorModel(weave.Model):
 
-        model: str = "gemini-2.0-flash-exp-image-generation"
+        model: str = "gemini-3.1-flash-image-preview"
 
         @weave.op
         def is_url(self, path: str) -> bool:
@@ -88,7 +89,7 @@ def _(PILImage, Path, genai, io, os, requests, weave):
             Returns:
                 Dictionary containing the saved path and prompt used
             """
-            genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
+            client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
             # ------------------------------------------------------------------ #
             # Step 1 — load both images (local or URL) as PIL images              #
@@ -101,34 +102,54 @@ def _(PILImage, Path, genai, io, os, requests, weave):
 
             # ------------------------------------------------------------------ #
             # Step 2 — send both images + user prompt to Gemini in one call       #
-            # Gemini Flash natively supports interleaved image+text input     #
+            # Gemini Flash natively supports interleaved image+text input         #
             # and can return generated images directly in the response            #
             # ------------------------------------------------------------------ #
             print("Sending images to Gemini Flash for combination...")
 
-            model = genai.GenerativeModel(self.model)
-
-            # build contents
-            contents = [prompt]
+            # Build parts list: start with text prompt, then add each image
+            parts = [types.Part.from_text(text=prompt)]
             for image in images:
-                contents.append(image)
+                # Convert PIL image to bytes for the new API
+                img_byte_arr = io.BytesIO()
+                image.save(img_byte_arr, format="PNG")
+                img_bytes = img_byte_arr.getvalue()
+                parts.append(
+                    types.Part.from_bytes(data=img_bytes, mime_type="image/png")
+                )
 
-            response = model.generate_content(
-                contents,
-                generation_config={"response_modalities": ["TEXT", "IMAGE"]},  # pass as plain dict instead
+            contents = [
+                types.Content(
+                    role="user",
+                    parts=parts,
+                )
+            ]
+
+            generate_content_config = types.GenerateContentConfig(
+                thinking_config=types.ThinkingConfig(
+                    thinking_level="MINIMAL",
+                ),
+                response_modalities=["IMAGE", "TEXT"],
             )
 
             # ------------------------------------------------------------------ #
-            # Step 3 —ract the generated image from the response              #
+            # Step 3 — extract the generated image from the streamed response     #
             # ------------------------------------------------------------------ #
             generated_image = None
             response_text = None
 
-            for part in response.candidates[0].content.parts:
-                if part.inline_data is not None:
-                    generated_image = part.inline_data.data   # raw bytes
-                elif part.text is not None:
-                    response_text = part.text
+            for chunk in client.models.generate_content_stream(
+                model=self.model,
+                contents=contents,
+                config=generate_content_config,
+            ):
+                if chunk.parts is None:
+                    continue
+                for part in chunk.parts:
+                    if part.inline_data and part.inline_data.data:
+                        generated_image = part.inline_data.data  # raw bytes
+                    elif part.text:
+                        response_text = (response_text or "") + part.text
 
             if generated_image is None:
                 raise ValueError("No image was returned by Gemini. Check your prompt or API access.")
