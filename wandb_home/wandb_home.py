@@ -180,7 +180,11 @@ def _(PILImage, Path, genai, io, os, requests, types, weave):
 
 @app.cell
 def _(ImageGeneratorModel, weave):
-    weave.init("wandb-pmm/wandb-home")
+    
+    WANDB_ENTITY = "ENTER_WANDB_ENTITY_HERE"
+    WANDB_PROJECT = "ENTER_WANDB_PROJECT_HERE"
+
+    weave.init(WANDB_ENTITY + "/" + WANDB_PROJECT)
 
     # Mix and match freely — local paths and URLs both work
     image_paths = [
