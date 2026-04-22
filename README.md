@@ -45,7 +45,7 @@ cd ai-builders/wandb_home
 ### 3. **Create a Virtual Environment**
 
 ```bash
-python -m venv venv
+python -m venv .venv
 ```
 
 ---
