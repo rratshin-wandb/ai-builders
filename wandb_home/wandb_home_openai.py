@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.22.0"
+__generated_with = "0.23.1"
 app = marimo.App(width="medium")
 
 
@@ -167,7 +167,6 @@ def _(ImageGeneratorModel, weave):
 
     WANDB_ENTITY = "ENTER_WANDB_ENTITY_HERE"
     WANDB_PROJECT = "ENTER_WANDB_PROJECT_HERE"
-
     weave.init(WANDB_ENTITY + "/" + WANDB_PROJECT)
 
     # Mix and match freely — local paths and URLs both work
@@ -194,7 +193,7 @@ def _(ImageGeneratorModel, weave):
     image_model = ImageGeneratorModel(
         # model="gpt-image-1",
         # model="gpt-image-1.5"
-        model="gpt-image-1-mini"
+        model="gpt-image-2-2026-04-21"
     )
 
     result = image_model.invoke(
