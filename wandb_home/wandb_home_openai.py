@@ -166,7 +166,7 @@ def _(PILImage, Path, base64, io, openai, os, requests, weave):
 def _(ImageGeneratorModel, weave):
 
     WANDB_ENTITY = "ENTER_WANDB_ENTITY_HERE"
-    WANDB_PROJECT = "ENTER_WANDB_PROJECT_HERE"
+    WANDB_PROJECT = "InteriorDesignAgent"
     weave.init(WANDB_ENTITY + "/" + WANDB_PROJECT)
 
     # Mix and match freely — local paths and URLs both work
