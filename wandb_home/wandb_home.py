@@ -182,7 +182,7 @@ def _(PILImage, Path, genai, io, os, requests, types, weave):
 def _(ImageGeneratorModel, weave):
     
     WANDB_ENTITY = "ENTER_WANDB_ENTITY_HERE"
-    WANDB_PROJECT = "ENTER_WANDB_PROJECT_HERE"
+    WANDB_PROJECT = "InteriorDesignAgent"
 
     weave.init(WANDB_ENTITY + "/" + WANDB_PROJECT)
 
