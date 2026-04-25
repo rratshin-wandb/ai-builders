@@ -53,7 +53,7 @@ python -m venv .venv
 ### 4. **Activate the Virtual Environment**
 
 ```bash
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 ---
