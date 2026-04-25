@@ -200,7 +200,7 @@ def _(ImageGeneratorModel, weave):
             - Image 3: A cat
 
         Instructions:
-            - Please place a lamp [Image 2] on boh the left and right bedside tables in the bedroom [Image 1], matching the lighting of the room and the position of the lamps currently on the bedside tables.
+            - Please place a lamp [Image 2] on both the left and right bedside tables in the bedroom [Image 1], matching the lighting of the room and the position of the lamps currently on the bedside tables.
             - Please put the cat [Image 5] sleeping on the bench at the foot of the bed.
             - Please do not zoom or pan on the final bedroom image. Everything in the bedroom [Image 1] should remain exactly the same except for the changes requested in the instructions.
     """
