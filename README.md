@@ -103,9 +103,8 @@ This project uses Gemini, but also includes an OpenAI version of the notebook (w
 
 **Additional Resources**
 
-💻 GitHub repo: [https://github.com/rratshin-wandb/ai-builders](https://github.com/rratshin-wandb/ai-builders)
-
-📘 Blog post: [https://wandb.ai/wandb_fc/ai-builders/reports/Building-an-AI-agent-for-interior-design--VmlldzoxNjY1NjY5MA](https://wandb.ai/wandb_fc/ai-builders/reports/Building-an-AI-agent-for-interior-design--VmlldzoxNjY1NjY5MA)
+- 💻 GitHub repo: [https://github.com/rratshin-wandb/ai-builders](https://github.com/rratshin-wandb/ai-builders)
+- 📘 Blog post: [https://wandb.ai/wandb_fc/ai-builders/reports/Building-an-AI-agent-for-interior-design--VmlldzoxNjY1NjY5MA](https://wandb.ai/wandb_fc/ai-builders/reports/Building-an-AI-agent-for-interior-design--VmlldzoxNjY1NjY5MA)
 
 **Need help?**  
 Please [open an issue](https://github.com/rratshin-wandb/ai-builders/issues) or start a discussion if you get stuck.
