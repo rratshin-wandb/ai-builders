@@ -1,5 +1,5 @@
 <p align="left">
-  <img src="../logo_wandb_home.png" alt="W&B Home">
+  <img src="../logo_wandb_home.png" alt="W&B Home" width="300px">
 </p>
 
 ## Project #1: 🏠 Building an AI agent for interior design (W&B Home)
