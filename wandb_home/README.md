@@ -2,12 +2,12 @@
 <h3 align="center">Upleveling real-world applications with AI</h3>
 
 <p align="center">
-  <img src="ai_builders_header.png" alt="AI Builders header" width="100%">
+  <img src="../ai_builders_header.png" alt="AI Builders header" width="100%">
 </p>
 
 ## Project #1: 🏠 Building an AI agent for interior design (W&B Home)
 
-<img src="wandb_home/ss_wandb_home_1.png" width="300" border="1"> <img src="wandb_home/ss_wandb_home_2.png" width="300" border="1">
+<img src="./ss_wandb_home_1.png" width="300" border="1"> <img src="./ss_wandb_home_2.png" width="300" border="1">
 
 This repository contains all the code, sample images, and supporting materials used in our first AI demo project.  
 Our AI Interior Decorator lets you **visualize how new furniture would look in your own space, before you buy it**.
