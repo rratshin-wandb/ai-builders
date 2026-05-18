@@ -1,8 +1,5 @@
-<h1 align="center">🛠 AI Builders 🛠</h1>
-<h3 align="center">Upleveling real-world applications with AI</h3>
-
-<p align="center">
-  <img src="../ai_builders_header.png" alt="AI Builders header" width="100%">
+<p align="left">
+  <img src="../logo_wandb_home.png" alt="W&B Home">
 </p>
 
 ## Project #1: 🏠 Building an AI agent for interior design (W&B Home)
