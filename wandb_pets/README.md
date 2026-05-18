@@ -2,7 +2,7 @@
   <img src="../logo_wandb_pets.png" alt="W&B Home" width="200px">
 </p>
 
-## Project #2: 🐾 Building a text-to-SQL agent (W&B Pets)
+## Project #2: 📊 Building a text-to-SQL agent (W&B Pets)
 
 <img src="./ss_wandb_home_1.png" width="300" border="1"> <img src="./ss_wandb_home_2.png" width="300" border="1">
 
